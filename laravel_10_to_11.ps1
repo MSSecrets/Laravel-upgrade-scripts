@@ -36,15 +36,15 @@ Set-Content "$projectRoot\composer.json" $composerJson
 Write-Host "✅ Updated composer.json for Laravel 11 and PHP ≥ 8.2"
 
 # Run composer update
-Write-Host "📦 Running composer update..."
-composer update
+# Write-Host "📦 Running composer update..."
+# composer update
 
-# Laravel cache clear
-Write-Host "🧹 Clearing Laravel caches..."
-php artisan config:clear
-php artisan cache:clear
-php artisan route:clear
-php artisan view:clear
+# # Laravel cache clear
+# Write-Host "🧹 Clearing Laravel caches..."
+# php artisan config:clear
+# php artisan cache:clear
+# php artisan route:clear
+# php artisan view:clear
 
 # Update phpunit.xml for PHPUnit 10.5 compatibility
 $phpunitFile = "$projectRoot\phpunit.xml"

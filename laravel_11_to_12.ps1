@@ -34,15 +34,15 @@ Set-Content "$projectRoot\composer.json" $composerJson
 Write-Host "✅ Updated composer.json for Laravel 12, PHP ≥ 8.2, PHPUnit 11, and Carbon 3"
 
 # Composer update
-Write-Host "📦 Running composer update..."
-composer update
+# Write-Host "📦 Running composer update..."
+# composer update
 
-# Laravel cache clear
-Write-Host "🧹 Clearing Laravel caches..."
-php artisan config:clear
-php artisan cache:clear
-php artisan route:clear
-php artisan view:clear
+# # Laravel cache clear
+# Write-Host "🧹 Clearing Laravel caches..."
+# php artisan config:clear
+# php artisan cache:clear
+# php artisan route:clear
+# php artisan view:clear
 
 # Update phpunit.xml
 $phpunitFile = "$projectRoot\phpunit.xml"
